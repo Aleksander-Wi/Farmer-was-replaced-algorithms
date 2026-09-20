@@ -37,3 +37,6 @@ The number of loops in All_in_Script.py needs to be equal to the Y value of the 
 ├── carrot.py          # Soil-tilling and planting loop (started by All_in_Script)
 └── reset.py           # Origin position reset sequence (started by All_in_Script)
 *Remember about correctly naming scripts*
+```
+
+![That's what it should look like in the game:](assets/Example1.png)
