@@ -23,11 +23,13 @@ This repository demonstrates practical software engineering and robotics concept
 
 ---
 
+The number of loops in All_in_Script.py needs to be equal to the Y value of the map!
+
 ## 📁 Repository Structure
 
 ```text
 ├── All_in_Script.py   # Central loop controller and execution manager
-├── MAZE.py            # Standalone DFS maze-solving algorithm *! The number of loops need to equal y value of map!*
+├── MAZE.py            # Standalone DFS maze-solving algorithm
 ├── sunflower.py       # Priority sorting and toroidal navigation (started by All_in_Script)
 ├── PUMPKIN.py         # Dynamic fault inspection and crop repair (started by All_in_Script)
 ├── WOOD.py            # Alternating crop pattern optimization (started by All_in_Script)
