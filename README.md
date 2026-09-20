@@ -40,4 +40,3 @@ The number of loops in All_in_Script.py needs to be equal to the Y value of the 
 ```
 
 ![That's what it should look like in the game:](assets/Example1.png)
-![1](assets/gif1.gif)
