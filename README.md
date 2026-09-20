@@ -27,11 +27,11 @@ This repository demonstrates practical software engineering and robotics concept
 
 ```text
 ├── All_in_Script.py   # Central loop controller and execution manager
-├── MAZE.py            # Standalone DFS maze-solving algorithm
-├── sunflower.py       # Priority sorting and toroidal navigation
-├── PUMPKIN.py         # Dynamic fault inspection and crop repair
-├── WOOD.py            # Alternating crop pattern optimization
-├── HAY.py             # Basic resource harvesting script
-├── carrot.py          # Soil-tilling and planting loop
-└── reset.py           # Origin position reset sequence
+├── MAZE.py            # Standalone DFS maze-solving algorithm *! The number of loops need to equal y value of map!*
+├── sunflower.py       # Priority sorting and toroidal navigation (started by All_in_Script)
+├── PUMPKIN.py         # Dynamic fault inspection and crop repair (started by All_in_Script)
+├── WOOD.py            # Alternating crop pattern optimization (started by All_in_Script)
+├── HAY.py             # Basic resource harvesting script (started by All_in_Script)
+├── carrot.py          # Soil-tilling and planting loop (started by All_in_Script)
+└── reset.py           # Origin position reset sequence (started by All_in_Script)
 *Remember about correctly naming scripts*
