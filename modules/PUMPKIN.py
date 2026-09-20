@@ -70,7 +70,7 @@ def pumpkin(pumpkin_loop = 0):
 							else:
 								move(South)
 						else:
-							if target_y > get_pos_y():
+							if first_pumpkin_pos[1] > get_pos_y():
 								move(South)
 							else:
 								move(North)
@@ -79,16 +79,9 @@ def pumpkin(pumpkin_loop = 0):
 							dead_pumpkin_y.append(get_pos_y())
 							dead_pumpkin_x.append(get_pos_x())
 						move(North)
-						if get_pos_y() == get_world_size() - 1:
-							if get_pos_y() == get_world_size() - 1 and i == (get_world_size() * pumpkin_loop) - 1:
-								break
+						if get_pos_y() == 0:
 							move(East)
 
-
-			
-						
-						
-		if get_pos_y() == get_world_size() - 1:
-			move(East)
 		move(North)
-			
+		if get_pos_y() == 0:
+			move(East)
