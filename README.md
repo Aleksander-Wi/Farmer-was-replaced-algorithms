@@ -1,7 +1,3 @@
-# Farmer-was-replaced-algorithms
-
-Autonomous farming algorithms and spatial navigation logic (DFS Backtracking, Priority Queues, Torus Topology) implemented in Python for "The Farmer Was Replaced".
-
 #  The Farmer Was Replaced - Autonomous Algorithms & Automation
 
 Automation scripts and algorithmic logic implemented in Python for the game *"The Farmer Was Replaced"*. 
@@ -12,16 +8,16 @@ This repository demonstrates practical software engineering and robotics concept
 
 ##  Key Technical Highlights
 
-###  1. Autonomous Maze Solver (`maze.py`)
+###  1. Autonomous Maze Solver (`MAZE.py`)
 - **Algorithm:** Depth-First Search (DFS) with a custom **Backtracking Stack**.
 - **Mechanics:** Explores unseen path coordinates, tracks visited positions, and unwinds the navigation stack (`visited_2.pop()`) upon hitting dead ends until the treasure coordinates are reached.
 
-###  2. Sunflower Priority Sorter (`sunflowerloop.py`)
+###  2. Sunflower Priority Sorter (`sunflower.py`)
 - **Algorithm:** Priority Queue simulation using tuple evaluation.
 - **Mechanics:** Measures sunflower yields across the field, dynamically selects targets via `max()` evaluation on `(quality, x, y)` tuples, and harvests the highest-value crops first.
 - **Navigation:** Custom **Torus Topology Navigation** that calculates the shortest wrapping distance across world boundaries (`world_size / 2`).
 
-###  3. Dynamic Crop Repair System (`pumpkin.py`)
+###  3. Dynamic Crop Repair System (`PUMPKIN.py`)
 - **Pattern:** Fault Inspection & Task Queue Recovery.
 - **Mechanics:** Scans crops for growth failures, queues dead plant coordinates (`dead_pumpkin_x/y`), and switches to a dedicated repair mode to replant and hydrate unharvestable tiles.
 
@@ -31,10 +27,11 @@ This repository demonstrates practical software engineering and robotics concept
 
 ```text
 ├── All_in_Script.py   # Central loop controller and execution manager
-├── maze.py            # Standalone DFS maze-solving algorithm
-├── sunflowerloop.py   # Priority sorting and toroidal navigation (started by All_in_Script)
-├── pumpkin.py         # Dynamic fault inspection and crop repair (started by All_in_Script)
-├── WOOD.py            # Alternating crop pattern optimization (started by All_in_Script)
-├── HAY.py             # Basic resource harvesting script (started by All_in_Script)
-├── carrot.py          # Soil-tilling and planting loop (started by All_in_Script)
-└── reset.py           # Origin position reset sequence (started by All_in_Script)
+├── MAZE.py            # Standalone DFS maze-solving algorithm
+├── sunflower.py       # Priority sorting and toroidal navigation
+├── PUMPKIN.py         # Dynamic fault inspection and crop repair
+├── WOOD.py            # Alternating crop pattern optimization
+├── HAY.py             # Basic resource harvesting script
+├── carrot.py          # Soil-tilling and planting loop
+└── reset.py           # Origin position reset sequence
+*Remember about correctly naming scripts*
