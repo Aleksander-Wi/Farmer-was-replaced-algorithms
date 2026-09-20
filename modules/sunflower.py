@@ -2,6 +2,8 @@
 def sunflowerloop():
 	sunflowers = []
 	import All_in_Script
+	first_sunflower_x = get_pos_x()
+	first_sunflower_y = get_pos_y()
 	def sunflower_high(sunflowers):
 		
 		while sunflowers:
@@ -50,6 +52,32 @@ def sunflowerloop():
 			move(East)
 		move(North)
 	sunflower_high(sunflowers)
+	if len(sunflowers) == 0:
+		while get_pos_x() != (first_sunflower_x + All_in_Script.sun_flower_loop):
+				if abs(first_sunflower_x + All_in_Script.sun_flower_loop - get_pos_x()) <= get_world_size() / 2:
+					if first_sunflower_x + All_in_Script.sun_flower_loop > get_pos_x():
+						move(East)
+					else:
+						move(West)
+				else:
+					if first_sunflower_x + All_in_Script.sun_flower_loop > get_pos_x():
+						move(West)
+					else:
+						move(East)
+		while get_pos_y() != (first_sunflower_y):
+				if abs(first_sunflower_y) <= get_world_size() / 2:
+					if first_sunflower_y > get_pos_y():
+						move(North)
+					else:
+						move(South)
+				else:
+					if first_sunflower_y > get_pos_y():
+						move(South)
+					else:
+						move(North)
+		
+		
+		
 	
 	
 	
