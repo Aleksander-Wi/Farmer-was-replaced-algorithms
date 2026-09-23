@@ -28,14 +28,23 @@ The number of loops in All_in_Script.py needs to be equal to the Y value of the 
 ## 📁 Repository Structure
 
 ```text
-├── All_in_Script.py   # Central loop controller and execution manager
-├── MAZE.py            # Standalone DFS maze-solving algorithm
-├── sunflower.py       # Priority sorting and toroidal navigation (started by All_in_Script)
-├── PUMPKIN.py         # Dynamic fault inspection and crop repair (started by All_in_Script)
-├── WOOD.py            # Alternating crop pattern optimization (started by All_in_Script)
-├── HAY.py             # Basic resource harvesting script (started by All_in_Script)
-├── carrot.py          # Soil-tilling and planting loop (started by All_in_Script)
-└── reset.py           # Origin position reset sequence (started by All_in_Script)
+├── MAZE.py                  # Standalone DFS maze-solving algorithm   
+└── All_in_Script.py         # Central loop controller and execution manager
+    ├── sunflower.py         # Priority sorting and toroidal navigation (started by All_in_Script)
+    ├── PUMPKIN.py           # Dynamic fault inspection and crop repair (started by All_in_Script)
+    ├── WOOD.py              # Alternating crop pattern optimization (started by All_in_Script)
+    ├── HAY.py               # Basic resource harvesting script (started by All_in_Script)
+    ├── carrot.py            # Soil-tilling and planting loop (started by All_in_Script)
+    └── reset.py             # Origin position reset sequence (started by All_in_Script)
+*Remember about correctly naming scripts*
+```
+## 📁 Repository Structure (Multiples Drones Unlocked)
+
+```text
+└── maze_controller.py       #Maze starter and safety check for the number of unlocked drones
+    ├── MAZE.py              #Distributed Multi-Agent DFS maze-solver(started by maze_controller.py)
+└── Maze_for_every_drone.py  #DFS Maze Solver with Multi-Agent Systems
+    ├── reset_maze.py        #Destroys previous mazes and moves the drone back to coordinates (0,0)
 *Remember about correctly naming scripts*
 ```
 
